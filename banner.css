@@ -1,0 +1,15 @@
+#section	{
+	height: 40vh;
+	background-image: url("../images/vistaverona.jpeg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#section h1 {
+	text-shadow: 3px 3px black;
+}

@@ -1,0 +1,70 @@
+.card-white{
+	background-color: whitesmoke;
+	border-radius: 6px;
+	padding: 16px;
+	text-align: center;
+}
+
+
+.card-white img {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+img:hover {
+	border: 2px solid whitesmoke;
+	background-color: whitesmoke;
+	transform: scale(1.1);
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 16px;
+}
+
+.cardhorizontal{
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 20px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.cardhorizontal img{
+	width: 200px;
+	height: auto;
+	margin-right: 20px;
+}
+
+.cardhorizontal-content{
+	flex: 1;
+}
+/*// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { ... }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.cards{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+.cards{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { ... }
+
